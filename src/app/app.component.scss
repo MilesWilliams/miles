@@ -1,0 +1,38 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.content-section-main {
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    background-color: white;
+}
+
+.content-section {
+    background-color: white;
+    height: 100%;
+    .side-menu {
+        width: 250px;
+    }
+}
+
+.router-content {
+    padding: 24px;
+    height: calc(100vh - 120px);
+}
+
+.top-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.side-menu {
+    width: 200px;
+}

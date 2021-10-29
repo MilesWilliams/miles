@@ -1,0 +1,23 @@
+<div class="left-arrow"></div>
+<div mat-dialog-title>
+    Step 2
+</div>
+<mat-dialog-content>
+    <ul>
+        <li>
+            Create a new lazy loaded route called <b>USERS</b> .
+        </li>
+        <li>
+            Display all users in alphabetical order on cards. <br>
+            5 Cards in a row on desktop and 2 Cards in a row on mobile <br>
+            You can add a default profile icon to the card
+        </li>
+        <li>
+            Add an input field at the top of the screen to auto search users by name
+        </li>
+    </ul>
+</mat-dialog-content>
+
+<mat-dialog-actions fxLayout="row" fxLayoutAlign="center center" mat-dialog-footer>
+    <button color="primary" mat-raised-button [mat-dialog-close]="true" cdkFocusInitial>NEXT</button>
+</mat-dialog-actions>

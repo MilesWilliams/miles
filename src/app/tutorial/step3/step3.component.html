@@ -1,0 +1,35 @@
+<div class="left-arrow"></div>
+<div mat-dialog-title>
+    Step 3
+</div>
+<mat-dialog-content>
+    <div>
+        Below is the 2 data source samples that will get returned from the api. <br>
+        Once you display all the users add a click function on the user to display all orders per user.
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-around start">
+
+
+        <div>
+            <h2 mat-card-title>
+                Users List
+            </h2>
+            <img src="/assets/images/users.png" alt="">
+        </div>
+
+
+        <div>
+            <h2 mat-card-title>
+                Orders of user
+            </h2>
+            <img src="/assets/images/orders.png" alt="">
+        </div>
+
+
+
+    </div>
+</mat-dialog-content>
+
+<mat-dialog-actions fxLayout="row" fxLayoutAlign="center center" mat-dialog-footer>
+    <button color="primary" mat-raised-button [mat-dialog-close]="true" cdkFocusInitial>NEXT</button>
+</mat-dialog-actions>

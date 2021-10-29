@@ -1,0 +1,105 @@
+<div fxLayout="column" fxFlexFill fxLayoutAlign="space-between">
+    <div fxLayout="column" fxLayoutAlign="space-around center">
+        <img width="150px" src="assets/images/angular-rain.png" alt="">
+        <h1>
+            Thanks for taking the time to do this practical test.
+        </h1>
+
+    </div>
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-around stretch" fxLayoutGap="20px">
+        <div fxLayout="column" fxLayoutGap="20px">
+            <mat-card fxFlex>
+                <mat-card-header>
+                    <mat-card-title>API Endpoints</mat-card-title>
+                    <mat-card-subtitle>Use these api endpoints to collect data</mat-card-subtitle>
+                </mat-card-header>
+
+                <mat-card-content>
+                    <b>BASE URL:</b> https://5fb6135636e2fa00166a4d8a.mockapi.io/api <br>
+                    <b>GET users:</b> /users <br>
+                    <b>GET orders:</b> /users/[userId]/orders
+                </mat-card-content>
+            </mat-card>
+
+            <mat-card fxFlex>
+                <mat-card-header>
+                    <mat-card-title>DOCS</mat-card-title>
+                    <mat-card-subtitle>These docs will help you with the framework, design and layout
+                    </mat-card-subtitle>
+                </mat-card-header>
+
+                <mat-card-content>
+                    <b>ANGULAR: </b>
+                    <a href="https://angular.io/docs" target="_blank"> Angular DOCS </a><br>
+                    <b>MATERIAL:</b>
+                    <a href="https://material.angular.io/components/categories" target="_blank"> Angular Material DOCS
+                    </a><br>
+                    <b>FLEX: </b>
+                    <a href="https://tburleson-layouts-demos.firebaseapp.com/#/docs" target="_blank"> Flex layout DOCS
+                    </a>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <mat-card fxFlex>
+            <mat-card-header>
+                <mat-card-title>Checklist</mat-card-title>
+                <mat-card-subtitle>This is all the required actions</mat-card-subtitle>
+            </mat-card-header>
+
+            <mat-card-content>
+                <ol>
+                    <li>
+                        Change top right text with your email
+                    </li>
+                    <li>
+                        Create a new lazy loaded page called 'USERS'
+                    </li>
+                    <ul>
+                        <li>
+                            Add USERS to the menu and link to the new page
+                        </li>
+                        <li>
+                            Get all the users from the api and display the users alphabetically by name on cards (add a
+                            default profile icon)
+                        </li>
+                        <li>
+                            Add an Input field to the top of the page and filter users by name
+                        </li>
+                    </ul>
+
+                    <li>
+                        Create another lazy loaded activated route called 'users/(id)/orders' and collect all orders per
+                        user when a users gets selected
+                    </li>
+                    <ul>
+                        <li>
+                            Display the orders in a table format
+                        </li>
+                        <li>
+                            On the orders page provide a button to return to the main list of users
+                        </li>
+                    </ul>
+
+                </ol>
+            </mat-card-content>
+        </mat-card>
+
+
+
+
+    </div>
+
+    <div fxLayoutAlign="center center" fxLayout="column">
+        <p>
+            Once you have completed please commit and push all your code then email <a
+                href="mailto:emile.boshoff@rain.co.za?subject=angular code test">emile.boshoff@rain.co.za</a> to
+            notify that you are completed
+        </p>
+        <button color="primary" mat-raised-button (click)="startTutorial()">START TUTORIAL</button>
+
+    </div>
+</div>
+
+<app-help></app-help>
